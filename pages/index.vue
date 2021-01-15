@@ -13,7 +13,7 @@
         </v-img>
         <v-card-subtitle>Splathon Ladder League Portal Page</v-card-subtitle>
         <v-card-text>
-          <p>Season5 は 2020/06/01 からスタート！</p>
+          <p>Season6 は 2021/01/16 からスタート！</p>
         </v-card-text>
       </v-card>
     </v-container>

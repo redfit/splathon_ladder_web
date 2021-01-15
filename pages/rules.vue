@@ -47,7 +47,7 @@ export default {
         { text: "ルール", value: "rule" },
         { text: "ステージ", value: "stage" }
       ],
-      season: 5
+      season: 6
     };
   },
   computed: {
@@ -56,7 +56,7 @@ export default {
     })
   },
   mounted() {
-    this.getRules({season: 5}).then(() => {
+    this.getRules({season: 6}).then(() => {
       this.loading = false;
       this.tab = this.rules.length - 1;
     })

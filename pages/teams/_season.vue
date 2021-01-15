@@ -40,7 +40,7 @@ export default {
   data(){
     return {
       loading: true,
-      season: this.$route.params.season ?? 5, // TODO: state current season
+      season: this.$route.params.season ?? 6, // TODO: state current season
       search: "",
       headers: [
         { text: 'チーム名', value: 'name' },
@@ -67,7 +67,7 @@ export default {
     }),
   },
   validate ({ params }) {
-    return params.season === undefined || /^\d+$/.test(params.season) && params.season <= 5 // TODO: state current season
+    return params.season === undefined || /^\d+$/.test(params.season) && params.season <= 6 // TODO: state current season
   }
 }
 </script>

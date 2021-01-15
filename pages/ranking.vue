@@ -62,7 +62,7 @@ export default {
         { text: 'Rank', value: 'rank' },
         { text: 'Team', value: 'name' },
       ],
-      season: 5,
+      season: 6,
     }
   },
   computed: {

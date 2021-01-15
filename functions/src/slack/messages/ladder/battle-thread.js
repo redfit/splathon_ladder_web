@@ -4,9 +4,9 @@ const useBattleThreadMessage = (app) => {
   app.message('対戦スレ', async ({ message, say }) => {
     const channelId = 'CBK6A95UJ';
     if　(message.channel == channelId) {
-      const season = 5;
+      const season = 6;
       const db = admin.firestore();
-      const seasonDoc = await db.collection(`tournaments`).doc(`spladder${season}`).get();    
+      const seasonDoc = await db.collection(`tournaments`).doc(`spladder${season}`).get();
       const currentRound = seasonDoc.data().currentRound;
       const ruleDoc = await db.collection(`tournaments/spladder${season}/rules`).doc(`${currentRound}`).get();
       const text = `シーズン：#${season} ラウンド：${currentRound}`;
